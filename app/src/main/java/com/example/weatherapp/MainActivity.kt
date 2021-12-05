@@ -22,15 +22,11 @@ class MainActivity : AppCompatActivity() {
         viewModel.weatherResponse.observe(this, { weather ->
 
             binding.apply {
-
+                tvCity.text = "Krasnoyrask"
                 tvTemperature.text = weather.temperature
-
-            /*
-                tvCityName.text = "Krasnoyrask"
                 tvDescription.text = weather.description
-
                 tvWind.text = weather.wind
-
+  /*
                 val forecast = weather.forecast
                 tvForecast1.text = "${forecast[0].temperature}/ ${forecast[0].wind}"
                 tvForecast2.text = "${forecast[1].temperature}/ ${forecast[1].wind}"

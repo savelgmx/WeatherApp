@@ -1,22 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/ic_launcher_background"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvTemperature"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvCity"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="90sp"
+        android:textSize="70sp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
         android:textColor="@color/white"
-        android:text="X3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Krasnoyarsk" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="70sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="0c"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Cloudy"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:id="@+id/tvWind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="5m/s"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>
