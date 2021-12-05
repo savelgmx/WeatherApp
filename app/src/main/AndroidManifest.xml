@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WeatherApp"
         tools:ignore="Instantiatable">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
